@@ -1,0 +1,40 @@
+﻿@model List<Department>
+@{
+    ViewData["Title"] = "Index";
+}
+
+<section>
+    <div class="container py-4">
+        <div class="row">
+            <div>
+                <h1 class="text-info"> Departments </h1>
+                <a href="/Department/Add" class="btn btn-primary">Add New Department</a>
+            </div>
+        </div>
+        <div class="row">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th scope="col">Department Name</th>
+                        <th scope="col">Manager Name</th>
+                        <th scope="col">Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var item in Model)
+                    {
+                        <tr>
+                            <td>@item.Name</td>
+                            <td>@item.ManagerName</td>
+                            <td>
+                                <div class="btn-group" role="group" aria-label="Basic example">
+                                    <a href="/Department/Update/@item.Id" class="btn btn-warning">Update</a>
+                                </div>
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
+</section>

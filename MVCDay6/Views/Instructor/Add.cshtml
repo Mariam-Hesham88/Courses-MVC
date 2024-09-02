@@ -1,0 +1,32 @@
+﻿@model Instructor
+@{
+    ViewData["Title"] = "Add";
+}
+
+<h1>Add New Instructor</h1>
+<div asp-validation-summary="All"></div>
+
+<form asp-action="Add" asp-controller="Instructor">
+    <div>
+        <label asp-for="@Model.Name">Name</label>
+        <input asp-for="@Model.Name" type="text" name="Name" id="Name" class="form form-control" />
+    </div>
+
+    <div>
+        <label asp-for="@Model.ImgSrc">ImgSrc</label>
+        <input asp-for="@Model.ImgSrc" type="text" name="ImgSrc" id="ImgSrc" class="form form-control" />
+    </div>
+
+    <div>
+        <label asp-for="@Model.Address">Address</label>
+        <input asp-for="@Model.Address" type="text" name="Address" id="Address" class="form form-control" />
+    </div>
+
+    <div>
+        <label asp-for="@Model.Salary">Salary</label>
+        <input asp-for="@Model.Salary" type="number" name="Salary" id="Salary" class="form form-control" />
+    </div>
+
+    <input type="submit" class="btn btn-warning" value="Add" asp-action="Add" asp-controller="Instructor" />
+
+</form>

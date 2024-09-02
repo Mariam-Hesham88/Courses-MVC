@@ -1,0 +1,24 @@
+﻿@model Course
+@{
+    ViewData["Title"] = "Update";
+}
+
+
+<form method="post" action="Update">
+    <div class=" pt-2">
+        <label>Name</label>
+        <input type="text" name="Name" value="@Model.Name" id="Name" class="form form-control" />
+    </div>
+
+    <div class=" pt-2">
+        <label>Degree</label>
+        <input type="text" name="Degree" value="@Model.Degree" id="Degree" class="form form-control" />
+    </div>
+
+    <div class=" pt-2">
+        <label>MinDegree</label>
+        <input type="text" name="MinDegree" value="@Model.MinDegree" id="MinDegree" class="form form-control" />
+    </div>
+
+    <input type="submit" class="btn btn-warning mt-4" value="Update" asp-action="Update" asp-controller="Course" />
+</form>

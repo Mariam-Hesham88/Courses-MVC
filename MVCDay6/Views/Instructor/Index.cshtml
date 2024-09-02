@@ -1,0 +1,24 @@
+﻿@model List<Instructor>
+@{
+    ViewData["Title"] = "Index";
+    ViewBag.Hide = true;
+}
+
+<section>
+    <div class="container py-4">
+        <div class="row">
+            <div>
+                <h1 class="text-info"> Instructors List </h1>
+                <a href="/Instructor/Add" class="btn btn-primary my-3">Add New Instructor</a>
+            </div>
+        </div>
+        <div class="row g-4">
+            @foreach (var item in Model)
+            {
+                <div class="col-md-3">
+                    <partial name="_InstructorPartialView" model="item" />
+                </div>
+            }
+        </div>
+    </div>
+</section>

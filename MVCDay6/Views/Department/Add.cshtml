@@ -1,0 +1,27 @@
+﻿@model Department
+@{
+    ViewData["Title"] = "Add";
+}
+
+<h1>Add New Department</h1>
+<div asp-validation-summary="All"></div>
+
+<form asp-action="Add" asp-controller="Department">
+    <div>
+        <label asp-for="@Model.Name">Name</label>
+        <input asp-for="@Model.Name" type="text" name="Name" id="Name" class="form form-control" />
+    </div>
+
+    <div>
+        <label asp-for="@Model.ManagerName">Manager Name</label>
+        <input asp-for="@Model.ManagerName" type="text" name="ManagerName" id="ManagerName" class="form form-control" />
+    </div>
+
+    <div>
+        <label asp-for="@Model.instructors">Instructors Id</label>
+        <input asp-for="@Model.instructors" type="text" name="instructorsId" id="instructorsId" class="form form-control" />
+    </div>
+
+    <input type="submit" class="btn btn-warning my-3" value="Add" asp-action="Add" asp-controller="Department" />
+
+</form>

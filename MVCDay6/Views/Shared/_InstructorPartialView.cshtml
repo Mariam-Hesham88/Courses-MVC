@@ -1,0 +1,37 @@
+﻿@model Instructor
+@{
+    bool Hide = ViewBag.Hide;
+}
+
+@if (Hide == false)
+{
+    <div class="card" style="width: 18rem;">
+        <img src="~/imgs/@Model.ImgSrc" alt="Instructor" />
+        <div class="card-body">
+            <h5 class="card-title">@Model.Name</h5>
+            <h5 class="card-title">@Model.Salary</h5>
+            <h5 class="card-title">@Model.Address</h5>
+            <div class="btn-group" role="group" aria-label="Basic example">
+                <a href="/Instructor/Index" class="btn btn-primary">Back</a>
+                <a href="/Instructor/Update/@Model.Id" class="btn btn-warning">Update</a>
+                <a href="/Instructor/Delete/@Model.Id" class="btn btn-danger">Delete</a>
+            </div>
+        </div>
+    </div>
+}
+else
+{
+    <div class="card" style="width: 18rem;">
+        <img src="~/imgs/@Model.ImgSrc" alt="Instructor" />
+        <div class="card-body">
+            <h5 class="card-title">@Model.Name</h5>
+            <h5 class="card-title">@Model.Salary</h5>
+            <h5 class="card-title">@Model.Address</h5>
+            <div class="btn-group" role="group" aria-label="Basic example">
+                <a href="/Instructor/Details/@Model.Id" class="btn btn-primary">Details</a>
+                <a href="/Instructor/Update/@Model.Id" class="btn btn-warning">Update</a>
+                <a href="/Instructor/Delete/@Model.Id" class="btn btn-danger">Delete</a>
+            </div>
+        </div>
+    </div>
+}
