@@ -10,7 +10,7 @@
 </head>
 <body>
     @* @Html.Partial("_MyPartialView") *@
-    <partial name="_MyPartialView"/>
+    <partial name="_NavPartialView.cshtml" />
 
     <div class="container">
         <main role="main" class="pb-3">
@@ -18,9 +18,12 @@
         </main>
     </div>
 
-    <footer class="border-top footer text-muted">
+    <footer class="border-top footer text-muted bg-light py-2">
         <div class="container">
-            copy . 2024 - Courses - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+            <div class="row">
+                <h5 class="text-dark text-center"> Interested to work with us? Drop us a line </h5>
+                <h6 class="text-primary text-center"> courses@gmail.com </h6>
+            </div>
         </div>
     </footer>
     <script src="~/lib/jquery/dist/jquery.min.js"></script>

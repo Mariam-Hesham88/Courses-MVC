@@ -1,4 +1,4 @@
-﻿@model List<Instructor>
+﻿@model IEnumerable<Instructor>
 @{
     ViewData["Title"] = "Index";
     ViewBag.Hide = true;
@@ -9,7 +9,7 @@
         <div class="row">
             <div>
                 <h1 class="text-info"> Instructors List </h1>
-                <a href="/Instructor/Add" class="btn btn-primary my-3">Add New Instructor</a>
+                <a asp-controller="Instructor" asp-action="Add" class="btn btn-primary my-3">Add New Instructor</a>
             </div>
         </div>
         <div class="row g-4">

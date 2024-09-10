@@ -1,3 +1,8 @@
+using Microsoft.EntityFrameworkCore;
+using MVCDay6.Models;
+using MVCDay6.Repo.Interfaces;
+using MVCDay6.Repo.Repositories;
+
 namespace MVCDay6
 {
     public class Program
@@ -8,6 +13,20 @@ namespace MVCDay6
 
             // Add services to the container.
             builder.Services.AddControllersWithViews();
+
+            //DbContext
+            builder.Services.AddDbContext<AppDbContext>(options =>
+            {
+                options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"));
+            });
+
+            builder.Services.AddScoped<IInstructorRepository, InstructorRepository>();
+            builder.Services.AddScoped<IDepartmentRepository, DepartmentRepository>();
+            builder.Services.AddScoped<ICoursesRepository, CoursesRepository>();
+            //unitofwork
+            //builder.Services.AddScoped<, >();
+
+            builder.Services.AddHttpContextAccessor();
 
             var app = builder.Build();
 

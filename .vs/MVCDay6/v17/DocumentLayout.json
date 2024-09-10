@@ -3,40 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\Mariam\\Desktop\\Assignments\\Task4\\MVCDay6\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{1B53FF6B-3711-43EB-8518-8B6F738C0B4E}|MVCDay6\\MVCDay6.csproj|c:\\users\\mariam\\desktop\\assignments\\task4\\mvcday6\\mvcday6\\views\\course\\add.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{1B53FF6B-3711-43EB-8518-8B6F738C0B4E}|MVCDay6\\MVCDay6.csproj|solutionrelative:mvcday6\\views\\course\\add.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{1B53FF6B-3711-43EB-8518-8B6F738C0B4E}|MVCDay6\\MVCDay6.csproj|c:\\users\\mariam\\desktop\\assignments\\task4\\mvcday6\\mvcday6\\views\\instructor\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1B53FF6B-3711-43EB-8518-8B6F738C0B4E}|MVCDay6\\MVCDay6.csproj|solutionrelative:mvcday6\\views\\instructor\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1B53FF6B-3711-43EB-8518-8B6F738C0B4E}|MVCDay6\\MVCDay6.csproj|c:\\users\\mariam\\desktop\\assignments\\task4\\mvcday6\\mvcday6\\views\\department\\add.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{1B53FF6B-3711-43EB-8518-8B6F738C0B4E}|MVCDay6\\MVCDay6.csproj|solutionrelative:mvcday6\\views\\department\\add.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{1B53FF6B-3711-43EB-8518-8B6F738C0B4E}|MVCDay6\\MVCDay6.csproj|c:\\users\\mariam\\desktop\\assignments\\task4\\mvcday6\\mvcday6\\controllers\\instructorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1B53FF6B-3711-43EB-8518-8B6F738C0B4E}|MVCDay6\\MVCDay6.csproj|solutionrelative:mvcday6\\controllers\\instructorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1B53FF6B-3711-43EB-8518-8B6F738C0B4E}|MVCDay6\\MVCDay6.csproj|c:\\users\\mariam\\desktop\\assignments\\task4\\mvcday6\\mvcday6\\views\\department\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{1B53FF6B-3711-43EB-8518-8B6F738C0B4E}|MVCDay6\\MVCDay6.csproj|solutionrelative:mvcday6\\views\\department\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{1B53FF6B-3711-43EB-8518-8B6F738C0B4E}|MVCDay6\\MVCDay6.csproj|c:\\users\\mariam\\desktop\\assignments\\task4\\mvcday6\\mvcday6\\repo\\interfaces\\igenericrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1B53FF6B-3711-43EB-8518-8B6F738C0B4E}|MVCDay6\\MVCDay6.csproj|solutionrelative:mvcday6\\repo\\interfaces\\igenericrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1B53FF6B-3711-43EB-8518-8B6F738C0B4E}|MVCDay6\\MVCDay6.csproj|c:\\users\\mariam\\desktop\\assignments\\task4\\mvcday6\\mvcday6\\views\\course\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{1B53FF6B-3711-43EB-8518-8B6F738C0B4E}|MVCDay6\\MVCDay6.csproj|solutionrelative:mvcday6\\views\\course\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1B53FF6B-3711-43EB-8518-8B6F738C0B4E}|MVCDay6\\MVCDay6.csproj|c:\\users\\mariam\\desktop\\assignments\\task4\\mvcday6\\mvcday6\\controllers\\coursecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1B53FF6B-3711-43EB-8518-8B6F738C0B4E}|MVCDay6\\MVCDay6.csproj|solutionrelative:mvcday6\\controllers\\coursecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1B53FF6B-3711-43EB-8518-8B6F738C0B4E}|MVCDay6\\MVCDay6.csproj|c:\\users\\mariam\\desktop\\assignments\\task4\\mvcday6\\mvcday6\\views\\instructor\\update.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{1B53FF6B-3711-43EB-8518-8B6F738C0B4E}|MVCDay6\\MVCDay6.csproj|solutionrelative:mvcday6\\views\\instructor\\update.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1B53FF6B-3711-43EB-8518-8B6F738C0B4E}|MVCDay6\\MVCDay6.csproj|c:\\users\\mariam\\desktop\\assignments\\task4\\mvcday6\\mvcday6\\views\\instructor\\add.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{1B53FF6B-3711-43EB-8518-8B6F738C0B4E}|MVCDay6\\MVCDay6.csproj|solutionrelative:mvcday6\\views\\instructor\\add.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1B53FF6B-3711-43EB-8518-8B6F738C0B4E}|MVCDay6\\MVCDay6.csproj|c:\\users\\mariam\\desktop\\assignments\\task4\\mvcday6\\mvcday6\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{1B53FF6B-3711-43EB-8518-8B6F738C0B4E}|MVCDay6\\MVCDay6.csproj|solutionrelative:mvcday6\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1B53FF6B-3711-43EB-8518-8B6F738C0B4E}|MVCDay6\\MVCDay6.csproj|c:\\users\\mariam\\desktop\\assignments\\task4\\mvcday6\\mvcday6\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1B53FF6B-3711-43EB-8518-8B6F738C0B4E}|MVCDay6\\MVCDay6.csproj|solutionrelative:mvcday6\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{1B53FF6B-3711-43EB-8518-8B6F738C0B4E}|MVCDay6\\MVCDay6.csproj|c:\\users\\mariam\\desktop\\assignments\\task4\\mvcday6\\mvcday6\\repo\\repositories\\genericrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1B53FF6B-3711-43EB-8518-8B6F738C0B4E}|MVCDay6\\MVCDay6.csproj|solutionrelative:mvcday6\\repo\\repositories\\genericrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -51,118 +31,54 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Add.cshtml",
-              "DocumentMoniker": "C:\\Users\\Mariam\\Desktop\\Assignments\\Task4\\MVCDay6\\MVCDay6\\Views\\Course\\Add.cshtml",
-              "RelativeDocumentMoniker": "MVCDay6\\Views\\Course\\Add.cshtml",
-              "ToolTip": "C:\\Users\\Mariam\\Desktop\\Assignments\\Task4\\MVCDay6\\MVCDay6\\Views\\Course\\Add.cshtml",
-              "RelativeToolTip": "MVCDay6\\Views\\Course\\Add.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAAJAAAA",
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "C:\\Users\\Mariam\\Desktop\\Assignments\\Task4\\MVCDay6\\MVCDay6\\Views\\Instructor\\Details.cshtml",
+              "RelativeDocumentMoniker": "MVCDay6\\Views\\Instructor\\Details.cshtml",
+              "ToolTip": "C:\\Users\\Mariam\\Desktop\\Assignments\\Task4\\MVCDay6\\MVCDay6\\Views\\Instructor\\Details.cshtml",
+              "RelativeToolTip": "MVCDay6\\Views\\Instructor\\Details.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-09-02T10:56:00.49Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "CourseController.cs",
-              "DocumentMoniker": "C:\\Users\\Mariam\\Desktop\\Assignments\\Task4\\MVCDay6\\MVCDay6\\Controllers\\CourseController.cs",
-              "RelativeDocumentMoniker": "MVCDay6\\Controllers\\CourseController.cs",
-              "ToolTip": "C:\\Users\\Mariam\\Desktop\\Assignments\\Task4\\MVCDay6\\MVCDay6\\Controllers\\CourseController.cs",
-              "RelativeToolTip": "MVCDay6\\Controllers\\CourseController.cs",
-              "ViewState": "AQIAACQAAAAAAAAAAAA7wDQAAAAyAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-02T10:55:48.077Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\Mariam\\Desktop\\Assignments\\Task4\\MVCDay6\\MVCDay6\\Views\\Course\\Index.cshtml",
-              "RelativeDocumentMoniker": "MVCDay6\\Views\\Course\\Index.cshtml",
-              "ToolTip": "C:\\Users\\Mariam\\Desktop\\Assignments\\Task4\\MVCDay6\\MVCDay6\\Views\\Course\\Index.cshtml",
-              "RelativeToolTip": "MVCDay6\\Views\\Course\\Index.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABcAAABqAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-09-02T10:55:37.795Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\Mariam\\Desktop\\Assignments\\Task4\\MVCDay6\\MVCDay6\\Views\\Department\\Index.cshtml",
-              "RelativeDocumentMoniker": "MVCDay6\\Views\\Department\\Index.cshtml",
-              "ToolTip": "C:\\Users\\Mariam\\Desktop\\Assignments\\Task4\\MVCDay6\\MVCDay6\\Views\\Department\\Index.cshtml",
-              "RelativeToolTip": "MVCDay6\\Views\\Department\\Index.cshtml",
-              "ViewState": "AQIAAA8AAAAAAAAAAAAAAB4AAABsAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-09-02T10:54:06.454Z",
+              "WhenOpened": "2024-09-10T21:07:49.033Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Add.cshtml",
-              "DocumentMoniker": "C:\\Users\\Mariam\\Desktop\\Assignments\\Task4\\MVCDay6\\MVCDay6\\Views\\Department\\Add.cshtml",
-              "RelativeDocumentMoniker": "MVCDay6\\Views\\Department\\Add.cshtml",
-              "ToolTip": "C:\\Users\\Mariam\\Desktop\\Assignments\\Task4\\MVCDay6\\MVCDay6\\Views\\Department\\Add.cshtml",
-              "RelativeToolTip": "MVCDay6\\Views\\Department\\Add.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAQAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-09-02T10:51:05.231Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Update.cshtml",
-              "DocumentMoniker": "C:\\Users\\Mariam\\Desktop\\Assignments\\Task4\\MVCDay6\\MVCDay6\\Views\\Instructor\\Update.cshtml",
-              "RelativeDocumentMoniker": "MVCDay6\\Views\\Instructor\\Update.cshtml",
-              "ToolTip": "C:\\Users\\Mariam\\Desktop\\Assignments\\Task4\\MVCDay6\\MVCDay6\\Views\\Instructor\\Update.cshtml",
-              "RelativeToolTip": "MVCDay6\\Views\\Instructor\\Update.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAPAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-09-02T10:49:42.897Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Add.cshtml",
-              "DocumentMoniker": "C:\\Users\\Mariam\\Desktop\\Assignments\\Task4\\MVCDay6\\MVCDay6\\Views\\Instructor\\Add.cshtml",
-              "RelativeDocumentMoniker": "MVCDay6\\Views\\Instructor\\Add.cshtml",
-              "ToolTip": "C:\\Users\\Mariam\\Desktop\\Assignments\\Task4\\MVCDay6\\MVCDay6\\Views\\Instructor\\Add.cshtml",
-              "RelativeToolTip": "MVCDay6\\Views\\Instructor\\Add.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAA8AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-09-02T10:47:50.336Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "_Layout.cshtml",
-              "DocumentMoniker": "C:\\Users\\Mariam\\Desktop\\Assignments\\Task4\\MVCDay6\\MVCDay6\\Views\\Shared\\_Layout.cshtml",
-              "RelativeDocumentMoniker": "MVCDay6\\Views\\Shared\\_Layout.cshtml",
-              "ToolTip": "C:\\Users\\Mariam\\Desktop\\Assignments\\Task4\\MVCDay6\\MVCDay6\\Views\\Shared\\_Layout.cshtml",
-              "RelativeToolTip": "MVCDay6\\Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAuAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-08-31T19:42:27.302Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\Mariam\\Desktop\\Assignments\\Task4\\MVCDay6\\MVCDay6\\Program.cs",
-              "RelativeDocumentMoniker": "MVCDay6\\Program.cs",
-              "ToolTip": "C:\\Users\\Mariam\\Desktop\\Assignments\\Task4\\MVCDay6\\MVCDay6\\Program.cs",
-              "RelativeToolTip": "MVCDay6\\Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Title": "InstructorController.cs",
+              "DocumentMoniker": "C:\\Users\\Mariam\\Desktop\\Assignments\\Task4\\MVCDay6\\MVCDay6\\Controllers\\InstructorController.cs",
+              "RelativeDocumentMoniker": "MVCDay6\\Controllers\\InstructorController.cs",
+              "ToolTip": "C:\\Users\\Mariam\\Desktop\\Assignments\\Task4\\MVCDay6\\MVCDay6\\Controllers\\InstructorController.cs",
+              "RelativeToolTip": "MVCDay6\\Controllers\\InstructorController.cs",
+              "ViewState": "AQIAACoAAAAAAAAAAAAowAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-31T12:55:40.077Z"
+              "WhenOpened": "2024-09-10T21:07:38.143Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "IGenericRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Mariam\\Desktop\\Assignments\\Task4\\MVCDay6\\MVCDay6\\Repo\\Interfaces\\IGenericRepository.cs",
+              "RelativeDocumentMoniker": "MVCDay6\\Repo\\Interfaces\\IGenericRepository.cs",
+              "ToolTip": "C:\\Users\\Mariam\\Desktop\\Assignments\\Task4\\MVCDay6\\MVCDay6\\Repo\\Interfaces\\IGenericRepository.cs",
+              "RelativeToolTip": "MVCDay6\\Repo\\Interfaces\\IGenericRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAA/AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-10T20:53:32.213Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "GenericRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Mariam\\Desktop\\Assignments\\Task4\\MVCDay6\\MVCDay6\\Repo\\Repositories\\GenericRepository.cs",
+              "RelativeDocumentMoniker": "MVCDay6\\Repo\\Repositories\\GenericRepository.cs",
+              "ToolTip": "C:\\Users\\Mariam\\Desktop\\Assignments\\Task4\\MVCDay6\\MVCDay6\\Repo\\Repositories\\GenericRepository.cs",
+              "RelativeToolTip": "MVCDay6\\Repo\\Repositories\\GenericRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABgAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-10T20:53:30.314Z",
+              "EditorCaption": ""
             }
           ]
         }

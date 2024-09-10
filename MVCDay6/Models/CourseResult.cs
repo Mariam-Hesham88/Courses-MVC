@@ -2,7 +2,7 @@
 
 namespace MVCDay6.Models
 {
-    public class CourseResult
+    public class CourseResult : BaseEntity
     {
             [Key]
             public int Id { get; set; }

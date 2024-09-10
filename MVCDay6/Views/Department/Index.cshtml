@@ -1,4 +1,4 @@
-﻿@model List<Department>
+﻿@model IEnumerable<Department>
 @{
     ViewData["Title"] = "Index";
 }
@@ -28,7 +28,9 @@
                             <td>@item.ManagerName</td>
                             <td>
                                 <div class="btn-group" role="group" aria-label="Basic example">
-                                    <a href="/Department/Update/@item.Id" class="btn btn-warning">Update</a>
+                                    <a asp-controller="Department" asp-action="Details" asp-all-route-id="@item.Id" class="btn btn-primary">Details</a>
+                                    <a asp-controller="Department" asp-action="Update" asp-all-route-id="@item.Id" class="btn btn-warning">Update</a>
+                                    <a asp-controller="Department" asp-action="Delete" asp-all-route-id="@item.Id" class="btn btn-danger">Delete</a>
                                 </div>
                             </td>
                         </tr>

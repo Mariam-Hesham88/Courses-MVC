@@ -1,47 +1,54 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using MVCDay6.Models;
+using MVCDay6.Repo.Interfaces;
+using MVCDay6.Repo.Repositories;
 
 namespace MVCDay6.Controllers
 {
     public class InstructorController : Controller
     {
-        AppDbContext _context = new AppDbContext();
+        private readonly IInstructorRepository _instructorRepository;
+
+        public InstructorController(IInstructorRepository instructorRepository)
+        {
+            _instructorRepository = instructorRepository;
+        }
+
         public IActionResult Index()
         {
-            List<Instructor> instructors = _context.instructors.ToList();
+            var instructors = _instructorRepository.GetAll();
             return View(instructors);
         }
 
         public IActionResult Details(int id)
         {
-            var inst = _context.instructors.FirstOrDefault(x => x.Id == id);
-            return PartialView("Details", inst);
+            var inst = _instructorRepository.GetById(id);
+            return View(inst);
         }
 
         [HttpGet]
         public IActionResult Update(int id)
         {
-            var instructor = _context.instructors.FirstOrDefault(x => x.Id == id);
+            var instructor = _instructorRepository.GetById(id);
             return View(instructor);
         }
 
         [HttpPost]
         public IActionResult Update(Instructor instructor)
         {
-            if (ModelState.IsValid) 
+            if (ModelState.IsValid)
             {
-                var inst = _context.instructors.Update(instructor);
-                _context.SaveChanges();
+                _instructorRepository.Update(instructor);
                 return RedirectToAction("Index");
             }
-            return View("Update");
+            return View(instructor);
         }
 
         [HttpGet]
         public IActionResult Add()
         {
-            return View();
+            return View(new Instructor());
         }
 
         [HttpPost]
@@ -49,22 +56,20 @@ namespace MVCDay6.Controllers
         {
             if (ModelState.IsValid)
             {
-                _context.instructors.Add(instructor);
-                _context.SaveChanges();
+                _instructorRepository.Add(instructor);
                 return RedirectToAction("Index");
             }
-            return View("Add", instructor);
+            return View(instructor);
         }
 
         public IActionResult Delete(int id)
         {
-            var instructor = _context.instructors.FirstOrDefault(i => i.Id == id);
-            if (instructor != null)
-            {
-                _context.instructors.Remove(instructor);
-                _context.SaveChanges();
-                return RedirectToAction("Index");
-            }
+            var instructor = _instructorRepository.GetById(id);
+
+            if (instructor is null)
+                return NotFound();
+
+            _instructorRepository.Delete(instructor);
             return RedirectToAction("Index");
         }
 

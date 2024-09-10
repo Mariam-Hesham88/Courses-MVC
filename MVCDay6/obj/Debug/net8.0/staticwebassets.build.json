@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "p2mtDMesUK1U1LETA9AxwEW5beSvmjH3PByHxI0c2iI=",
+  "Hash": "6lFOEJoga0LzN6+8aGLVjQuStaBJdfpKXcmx8zJnEFw=",
   "Source": "MVCDay6",
   "BasePath": "_content/MVCDay6",
   "Mode": "Default",
@@ -91,6 +91,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.ico"
+    },
+    {
+      "Identity": "C:\\Users\\Mariam\\Desktop\\Assignments\\Task4\\MVCDay6\\MVCDay6\\wwwroot\\imgs\\home.png",
+      "SourceId": "MVCDay6",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Mariam\\Desktop\\Assignments\\Task4\\MVCDay6\\MVCDay6\\wwwroot\\",
+      "BasePath": "_content/MVCDay6",
+      "RelativePath": "imgs/home.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\imgs\\home.png"
     },
     {
       "Identity": "C:\\Users\\Mariam\\Desktop\\Assignments\\Task4\\MVCDay6\\MVCDay6\\wwwroot\\imgs\\p1.jpg",

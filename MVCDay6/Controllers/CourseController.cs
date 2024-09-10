@@ -1,36 +1,42 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using MVCDay6.Models;
+using MVCDay6.Repo.Interfaces;
 
 namespace MVCDay6.Controllers
 {
     public class CourseController : Controller
     {
-        AppDbContext _context = new AppDbContext();
+        private readonly ICoursesRepository _coursesRepository;
+
+        public CourseController(ICoursesRepository coursesRepository)
+        {
+            _coursesRepository = coursesRepository;
+        }
+
         public IActionResult Index()
         {
-            List<Course> courses = _context.courses.ToList();
+            var courses = _coursesRepository.GetAll();
             return View(courses);
         }
         
-        [HttpGet]
-        public IActionResult Update(int id)
-        {
-            var course = _context.courses.FirstOrDefault(x => x.Id == id);
-            return View(course);
-        }
+        //[HttpGet]
+        //public IActionResult Update(int id)
+        //{
+        //    var course = _coursesRepository.GetById(id);
+        //    return View(course);
+        //}
 
-        [HttpPost]
-        public IActionResult Update(Course course)
-        {
-            var curs = _context.courses.Update(course);
-            _context.SaveChanges();
-            return RedirectToAction("Index");
-        }
+        //[HttpPost]
+        //public IActionResult Update(Course course)
+        //{
+        //    _coursesRepository.Update(course);
+        //    return RedirectToAction("Index");
+        //}
 
         [HttpGet]
         public IActionResult Add()
         {
-            return View();
+            return View(new Course());
         }
 
         [HttpPost]
@@ -38,20 +44,18 @@ namespace MVCDay6.Controllers
         {
             if (ModelState.IsValid)
             {
-                _context.courses.Add(course);
-                _context.SaveChanges();
+                _coursesRepository.Add(course);
                 return RedirectToAction("Index");
             }
-            return View("Add", course);
+            return View(course);
         }
 
         //public IActionResult Delete(int id)
         //{
-        //    var course = _context.courses.FirstOrDefault(i => i.Id == id);
+        //    var course = _coursesRepository.GetById(id);
         //    if (course != null)
         //    {
-        //        _context.courses.Remove(course);
-        //        _context.SaveChanges();
+        //        _coursesRepository.Delete(course);
         //        return RedirectToAction("Index");
         //    }
         //    return RedirectToAction("Index");

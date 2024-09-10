@@ -1,39 +1,45 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using MVCDay6.Models;
+using MVCDay6.Repo.Interfaces;
 
 namespace MVCDay6.Controllers
 {
     public class DepartmentController : Controller
     {
-        AppDbContext _context = new AppDbContext();
-        public IActionResult Index()
+        private readonly IDepartmentRepository _departmentRepository;
+
+        public DepartmentController(IDepartmentRepository departmentRepository)
         {
-            List<Department> department = _context.departments.ToList();
-            return View(department);
-        }
-        
-        [HttpGet]
-        public IActionResult Update(int id)
-        {
-            var department = _context.departments.FirstOrDefault(d => d.Id == id);
-            ViewBag.Inst = _context.instructors.ToList();
-            return View(department);
+            _departmentRepository = departmentRepository;
         }
 
-        [HttpPost]
-        public IActionResult Update(Department department)
+        public IActionResult Index()
         {
-            var dept = _context.departments.Update(department);
-            _context.SaveChanges();
-            ViewBag.Inst = _context.instructors.ToList();
-            return RedirectToAction("Index");
+            var departments = _departmentRepository.GetAll();
+            return View(departments);
         }
+
+        //[HttpGet]
+        //public IActionResult Update(int id)
+        //{
+        //    var department = _departmentRepository.GetAll();
+        //    //ViewBag.Inst = _context.instructors.ToList();
+        //    return View(department);
+        //}
+
+        //[HttpPost]
+        //public IActionResult Update(Department department)
+        //{
+        //    var dept = _departmentRepository.Update(department);
+        //    //ViewBag.Inst = _context.instructors.ToList();
+        //    return RedirectToAction("Index");
+        //}
 
         [HttpGet]
         public IActionResult Add()
         {
-            ViewBag.Inst = _context.instructors.ToList();
-            return View();
+            //ViewBag.Inst = _context.instructors.ToList();
+            return View(new Department());
         }
 
         [HttpPost]
@@ -41,21 +47,19 @@ namespace MVCDay6.Controllers
         {
             if (ModelState.IsValid)
             {
-                _context.departments.Add(department);
-                _context.SaveChanges();
+                _departmentRepository.Add(department);
                 return RedirectToAction("Index");
             }
-            ViewBag.Inst = _context.instructors.ToList();
-            return View("Add", department);
+            // ViewBag.Inst = _context.instructors.ToList();
+            return View(department);
         }
 
         //public IActionResult Delete(int id)
         //{
-        //    var department = _context.departments.FirstOrDefault(i => i.Id == id);
+        //    var department = _departmentRepository.GetById(id);
         //    if (department != null)
         //    {
-        //        _context.departments.Remove(department);
-        //        _context.SaveChanges();
+        //        _departmentRepository.Remove(department);
         //        return RedirectToAction("Index");
         //    }
         //    return RedirectToAction("Index");

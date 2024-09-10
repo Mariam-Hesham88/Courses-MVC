@@ -3,7 +3,7 @@ using System.ComponentModel.DataAnnotations;
 
 namespace MVCDay6.Models
 {
-    public class Instructor
+    public class Instructor : BaseEntity
     {
         [Key]
         public int Id { get; set; }

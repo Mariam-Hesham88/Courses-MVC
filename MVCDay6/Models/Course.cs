@@ -4,7 +4,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace MVCDay6.Models
 {
-    public class Course
+    public class Course : BaseEntity
     {
         [Key]
         public int Id { get; set; }

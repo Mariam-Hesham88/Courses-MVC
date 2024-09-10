@@ -1,4 +1,4 @@
-﻿@model List<Course>
+﻿@model IEnumerable<Course>
 @{
     ViewData["Title"] = "Index";
 }
@@ -7,25 +7,25 @@
         <div class="row">
             <div>
                 <h1 class="text-info"> Courses </h1>
-                <a href="/Course/Add" class="btn btn-primary my-3">Add New Course</a>
+                <a asp-controller="Course" asp-action="Add" class="btn btn-primary my-3">Add New Course</a>
             </div>
         </div>
      <div class="row g-4">
          @foreach (var course in Model)
          {
              <div class="col-md-4">
-             <div class="cards">
+                <div class="cards">
                       <div class="card bg-opacity-50 bg-secondary " style="width: 18rem;">
                             <div class="card-body">
                                <h5 class="card-title">@course.Name</h5>
                                <h6 class="card-subtitle mb-2 text-body-secondary">Full Degree : @course.Degree</h6>
                                <h6 class="card-subtitle mb-2 text-body-secondary">Minmam Degree : @course.MinDegree</h6>
-                               <a href="/Course/Update/@course.Id" class="btn btn-primary">Update</a>
-                               @* <a href="/Course/Delete/@course.Id" class="btn btn-danger">Delete</a> *@
+                                <a asp-controller="Course" asp-action="Update" asp-all-route-id="@course.Id" class="btn btn-primary">Update</a>
+                                <a asp-controller="Course" asp-action="Delete" asp-all-route-id="@course.Id" class="btn btn-danger">Delete</a>
                             </div>
                       </div>
+                </div>
              </div>
-             </div>
-          }
+         }
     </div>
 </section>
