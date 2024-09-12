@@ -6,30 +6,30 @@ namespace MVCDay6.Controllers
 {
     public class CourseController : Controller
     {
-        private readonly ICoursesRepository _coursesRepository;
+        private readonly IUnitOfWork _unitOfWork;
 
-        public CourseController(ICoursesRepository coursesRepository)
+        public CourseController(IUnitOfWork unitOfWork)
         {
-            _coursesRepository = coursesRepository;
+            _unitOfWork = unitOfWork;
         }
 
         public IActionResult Index()
         {
-            var courses = _coursesRepository.GetAll();
+            var courses = _unitOfWork.CoursesRepository.GetAll();
             return View(courses);
         }
-        
+
         //[HttpGet]
         //public IActionResult Update(int id)
         //{
-        //    var course = _coursesRepository.GetById(id);
+        //    var course = _unitOfWork.CoursesRepository.GetById(id);
         //    return View(course);
         //}
 
         //[HttpPost]
         //public IActionResult Update(Course course)
         //{
-        //    _coursesRepository.Update(course);
+        //    _unitOfWork.CoursesRepository.Update(course);
         //    return RedirectToAction("Index");
         //}
 
@@ -44,7 +44,7 @@ namespace MVCDay6.Controllers
         {
             if (ModelState.IsValid)
             {
-                _coursesRepository.Add(course);
+                _unitOfWork.CoursesRepository.Add(course);
                 return RedirectToAction("Index");
             }
             return View(course);
@@ -52,10 +52,10 @@ namespace MVCDay6.Controllers
 
         //public IActionResult Delete(int id)
         //{
-        //    var course = _coursesRepository.GetById(id);
+        //    var course = _unitOfWork.CoursesRepository.GetById(id);
         //    if (course != null)
         //    {
-        //        _coursesRepository.Delete(course);
+        //        _unitOfWork.CoursesRepository.Delete(course);
         //        return RedirectToAction("Index");
         //    }
         //    return RedirectToAction("Index");

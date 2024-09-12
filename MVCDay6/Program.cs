@@ -23,8 +23,7 @@ namespace MVCDay6
             builder.Services.AddScoped<IInstructorRepository, InstructorRepository>();
             builder.Services.AddScoped<IDepartmentRepository, DepartmentRepository>();
             builder.Services.AddScoped<ICoursesRepository, CoursesRepository>();
-            //unitofwork
-            //builder.Services.AddScoped<, >();
+            builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
 
             builder.Services.AddHttpContextAccessor();
 

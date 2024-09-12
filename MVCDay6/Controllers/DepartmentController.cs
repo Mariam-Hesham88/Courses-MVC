@@ -6,23 +6,23 @@ namespace MVCDay6.Controllers
 {
     public class DepartmentController : Controller
     {
-        private readonly IDepartmentRepository _departmentRepository;
+        private readonly IUnitOfWork _unitOfWork;
 
-        public DepartmentController(IDepartmentRepository departmentRepository)
+        public DepartmentController(IUnitOfWork unitOfWork)
         {
-            _departmentRepository = departmentRepository;
+            _unitOfWork = unitOfWork;
         }
 
         public IActionResult Index()
         {
-            var departments = _departmentRepository.GetAll();
+            var departments = _unitOfWork.DepartmentRepository.GetAll();
             return View(departments);
         }
 
         //[HttpGet]
         //public IActionResult Update(int id)
         //{
-        //    var department = _departmentRepository.GetAll();
+        //    var department = _unitOfWork.DepartmentRepository.GetAll();
         //    //ViewBag.Inst = _context.instructors.ToList();
         //    return View(department);
         //}
@@ -30,7 +30,7 @@ namespace MVCDay6.Controllers
         //[HttpPost]
         //public IActionResult Update(Department department)
         //{
-        //    var dept = _departmentRepository.Update(department);
+        //    var dept = _unitOfWork.DepartmentRepository.Update(department);
         //    //ViewBag.Inst = _context.instructors.ToList();
         //    return RedirectToAction("Index");
         //}
@@ -47,7 +47,7 @@ namespace MVCDay6.Controllers
         {
             if (ModelState.IsValid)
             {
-                _departmentRepository.Add(department);
+                _unitOfWork.DepartmentRepository.Add(department);
                 return RedirectToAction("Index");
             }
             // ViewBag.Inst = _context.instructors.ToList();
@@ -56,7 +56,7 @@ namespace MVCDay6.Controllers
 
         //public IActionResult Delete(int id)
         //{
-        //    var department = _departmentRepository.GetById(id);
+        //    var department = _unitOfWork.DepartmentRepository.GetById(id);
         //    if (department != null)
         //    {
         //        _departmentRepository.Remove(department);

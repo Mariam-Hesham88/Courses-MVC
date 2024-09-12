@@ -8,29 +8,29 @@ namespace MVCDay6.Controllers
 {
     public class InstructorController : Controller
     {
-        private readonly IInstructorRepository _instructorRepository;
+        private readonly IUnitOfWork _unitOfWork;
 
-        public InstructorController(IInstructorRepository instructorRepository)
+        public InstructorController(IUnitOfWork unitOfWork)
         {
-            _instructorRepository = instructorRepository;
+            _unitOfWork = unitOfWork;
         }
 
         public IActionResult Index()
         {
-            var instructors = _instructorRepository.GetAll();
+            var instructors = _unitOfWork.InstructorRepository.GetAll();
             return View(instructors);
         }
 
         public IActionResult Details(int id)
         {
-            var inst = _instructorRepository.GetById(id);
+            var inst = _unitOfWork.InstructorRepository.GetById(id);
             return View(inst);
         }
 
         [HttpGet]
         public IActionResult Update(int id)
         {
-            var instructor = _instructorRepository.GetById(id);
+            var instructor = _unitOfWork.InstructorRepository.GetById(id);
             return View(instructor);
         }
 
@@ -39,7 +39,7 @@ namespace MVCDay6.Controllers
         {
             if (ModelState.IsValid)
             {
-                _instructorRepository.Update(instructor);
+                _unitOfWork.InstructorRepository.Update(instructor);
                 return RedirectToAction("Index");
             }
             return View(instructor);
@@ -56,7 +56,7 @@ namespace MVCDay6.Controllers
         {
             if (ModelState.IsValid)
             {
-                _instructorRepository.Add(instructor);
+                _unitOfWork.InstructorRepository.Add(instructor);
                 return RedirectToAction("Index");
             }
             return View(instructor);
@@ -64,12 +64,12 @@ namespace MVCDay6.Controllers
 
         public IActionResult Delete(int id)
         {
-            var instructor = _instructorRepository.GetById(id);
+            var instructor = _unitOfWork.InstructorRepository.GetById(id);
 
             if (instructor is null)
                 return NotFound();
 
-            _instructorRepository.Delete(instructor);
+            _unitOfWork.InstructorRepository.Delete(instructor);
             return RedirectToAction("Index");
         }
 
