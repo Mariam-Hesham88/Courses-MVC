@@ -1,5 +1,7 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using AutoMapper;
+using Microsoft.AspNetCore.Mvc;
 using MVCDay6.Models;
+using MVCDay6.Models.Entities;
 using MVCDay6.Repo.Interfaces;
 
 namespace MVCDay6.Controllers
@@ -7,62 +9,83 @@ namespace MVCDay6.Controllers
     public class DepartmentController : Controller
     {
         private readonly IUnitOfWork _unitOfWork;
+        private readonly IMapper _mapper;
 
-        public DepartmentController(IUnitOfWork unitOfWork)
+        public DepartmentController(IUnitOfWork unitOfWork, IMapper mapping)
         {
             _unitOfWork = unitOfWork;
+            _mapper = mapping;
         }
 
-        public IActionResult Index()
+        public IActionResult Index(String SearchValue)
         {
-            var departments = _unitOfWork.DepartmentRepository.GetAll();
-            return View(departments);
+            IEnumerable<Department> departments;
+            IEnumerable<DepartmentViewModel> departmentViewModel;
+
+            if (string.IsNullOrEmpty(SearchValue))
+            {
+                departments = _unitOfWork.DepartmentRepository.GetAll();
+                departmentViewModel = _mapper.Map<IEnumerable<DepartmentViewModel>>(departments);
+            }
+            else
+            {
+                departments = _unitOfWork.DepartmentRepository.Search(SearchValue);
+                departmentViewModel = _mapper.Map<IEnumerable<DepartmentViewModel>>(departments);
+            }
+            return View(departmentViewModel);
         }
 
-        //[HttpGet]
-        //public IActionResult Update(int id)
-        //{
-        //    var department = _unitOfWork.DepartmentRepository.GetAll();
-        //    //ViewBag.Inst = _context.instructors.ToList();
-        //    return View(department);
-        //}
+        [HttpGet]
+        public IActionResult Update(int id)
+        {
+            var department = _unitOfWork.DepartmentRepository.GetAll();
+            var departmentViewModel = _mapper.Map<DepartmentViewModel>(department);
+            ViewBag.Instructors = _unitOfWork.InstructorRepository.GetAll();
+            return View(departmentViewModel);
+        }
 
-        //[HttpPost]
-        //public IActionResult Update(Department department)
-        //{
-        //    var dept = _unitOfWork.DepartmentRepository.Update(department);
-        //    //ViewBag.Inst = _context.instructors.ToList();
-        //    return RedirectToAction("Index");
-        //}
+        [HttpPost]
+        public IActionResult Update(DepartmentViewModel departmentViewModel)
+        {
+            if (ModelState.IsValid)
+            {
+                var dpartment = _mapper.Map<Department>(departmentViewModel);
+                _unitOfWork.DepartmentRepository.Update(dpartment);
+                return RedirectToAction("Index");
+            }
+            ViewBag.Instructors = _unitOfWork.InstructorRepository.GetAll();
+            return View(departmentViewModel);
+        }
 
         [HttpGet]
         public IActionResult Add()
         {
-            //ViewBag.Inst = _context.instructors.ToList();
-            return View(new Department());
+            ViewBag.Instructors = _unitOfWork.InstructorRepository.GetAll();
+            return View(new DepartmentViewModel());
         }
 
         [HttpPost]
-        public IActionResult Add(Department department)
+        public IActionResult Add(DepartmentViewModel departmentViewModel)
         {
             if (ModelState.IsValid)
             {
-                _unitOfWork.DepartmentRepository.Add(department);
+                var dpartment = _mapper.Map<Department>(departmentViewModel);
+                _unitOfWork.DepartmentRepository.Add(dpartment);
                 return RedirectToAction("Index");
             }
-            // ViewBag.Inst = _context.instructors.ToList();
-            return View(department);
+            ViewBag.Instructors = _unitOfWork.InstructorRepository.GetAll();
+            return View(departmentViewModel);
         }
 
-        //public IActionResult Delete(int id)
-        //{
-        //    var department = _unitOfWork.DepartmentRepository.GetById(id);
-        //    if (department != null)
-        //    {
-        //        _departmentRepository.Remove(department);
-        //        return RedirectToAction("Index");
-        //    }
-        //    return RedirectToAction("Index");
-        //}
+        public IActionResult Delete(int id)
+        {
+            var department = _unitOfWork.DepartmentRepository.GetById(id);
+            if (department != null)
+            {
+                _unitOfWork.DepartmentRepository.Delete(department);
+                return RedirectToAction("Index");
+            }
+            return RedirectToAction("Index");
+        }
     }
 }

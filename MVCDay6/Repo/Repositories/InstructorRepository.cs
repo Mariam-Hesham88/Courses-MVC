@@ -1,15 +1,22 @@
 ﻿using MVCDay6.Models;
+using MVCDay6.Models.Entities;
 using MVCDay6.Repo.Interfaces;
 
 namespace MVCDay6.Repo.Repositories
 {
     public class InstructorRepository : GenericRepository<Instructor>,IInstructorRepository
     {
-        //private readonly AppDbContext _Context;
+        private readonly AppDbContext _Context;
 
         public InstructorRepository(AppDbContext context) : base(context)
         {
-            //_Context = context;
+            _Context = context;
+        }
+
+        public IEnumerable<Instructor> Search(string name)
+        {
+            var result = _Context.instructors.Where(i => i.Name.Trim().ToLower().ToLower().Contains(name.Trim().ToLower()));
+            return result;
         }
 
         //public int Add(Instructor instructor)

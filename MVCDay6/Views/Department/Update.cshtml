@@ -1,10 +1,10 @@
-﻿@model Department
+﻿@model DepartmentViewModel
 @{
     ViewData["Title"] = "Update";
 }
 
 
-<form method="post" action="Update">
+<form asp-action="Add" asp-controller="Department">
     <div class=" pt-2">
         <label asp-for="@Model.Name">Name</label>
         <input asp-for="@Model.Name" type="text" name="Name" value="@Model.Name" id="Name" class="form form-control" />

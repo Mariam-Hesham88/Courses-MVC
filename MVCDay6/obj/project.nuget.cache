@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "JJyhYVjOUMk=",
+  "dgSpecHash": "NALxwUuzh28=",
   "success": true,
   "projectFilePath": "C:\\Users\\Mariam\\Desktop\\Assignments\\Task4\\MVCDay6\\MVCDay6\\MVCDay6.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\Mariam\\.nuget\\packages\\automapper\\13.0.1\\automapper.13.0.1.nupkg.sha512",
     "C:\\Users\\Mariam\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",
     "C:\\Users\\Mariam\\.nuget\\packages\\azure.identity\\1.10.3\\azure.identity.1.10.3.nupkg.sha512",
     "C:\\Users\\Mariam\\.nuget\\packages\\humanizer\\2.14.1\\humanizer.2.14.1.nupkg.sha512",

@@ -1,4 +1,4 @@
-﻿using MVCDay6.Models;
+﻿using MVCDay6.Models.Entities;
 
 namespace MVCDay6.Repo.Interfaces
 {

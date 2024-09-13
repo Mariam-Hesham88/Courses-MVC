@@ -1,7 +1,7 @@
 ﻿using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace MVCDay6.Models
+namespace MVCDay6.Models.Entities
 {
     public class Department : BaseEntity
     {
@@ -11,9 +11,8 @@ namespace MVCDay6.Models
         public string Name { get; set; }
         public string ManagerName { get; set; }
         public ICollection<Instructor> instructors { get; set; }
-       
-        
-        //[ForeignKey("Instructor")]
-        //public int instructorsId { get; set; }
+
+        [ForeignKey("Instructor")]
+        public int instructorsId { get; set; }
     }
 }

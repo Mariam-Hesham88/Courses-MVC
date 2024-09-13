@@ -1,10 +1,8 @@
-﻿using Microsoft.AspNetCore.Cors.Infrastructure;
-using System.ComponentModel.DataAnnotations;
-using System.ComponentModel.DataAnnotations.Schema;
+﻿using System.ComponentModel.DataAnnotations;
 
 namespace MVCDay6.Models
 {
-    public class Course : BaseEntity
+    public class CourseViewModel
     {
         [Key]
         public int Id { get; set; }
@@ -18,11 +16,6 @@ namespace MVCDay6.Models
 
         [Range(50, 100, ErrorMessage = "Please enter correct value")]
         public double MinDegree { get; set; }
-        public ICollection<Instructor> instructors { get; set; }
-
-        [ForeignKey("Instructor")]
         public int instructorsId { get; set; }
-        public ICollection<CourseResult> courseResult { get; set; }
-
     }
 }

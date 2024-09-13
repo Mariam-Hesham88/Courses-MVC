@@ -503,3 +503,4 @@ C:\Users\Mariam\Desktop\Assignments\Task4\MVCDay6\MVCDay6\obj\Debug\net8.0\MVCDa
 C:\Users\Mariam\Desktop\Assignments\Task4\MVCDay6\MVCDay6\obj\Debug\net8.0\MVCDay6.genruntimeconfig.cache
 C:\Users\Mariam\Desktop\Assignments\Task4\MVCDay6\MVCDay6\obj\Debug\net8.0\ref\MVCDay6.dll
 C:\Users\Mariam\Desktop\Assignments\Task4\MVCDay6\MVCDay6\obj\Debug\net8.0\MVCDay6.sourcelink.json
+C:\Users\Mariam\Desktop\Assignments\Task4\MVCDay6\MVCDay6\bin\Debug\net8.0\AutoMapper.dll

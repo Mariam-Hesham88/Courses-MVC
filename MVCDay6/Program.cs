@@ -1,5 +1,6 @@
 using Microsoft.EntityFrameworkCore;
-using MVCDay6.Models;
+using MVCDay6.Mapping;
+using MVCDay6.Models.Entities;
 using MVCDay6.Repo.Interfaces;
 using MVCDay6.Repo.Repositories;
 
@@ -24,6 +25,8 @@ namespace MVCDay6
             builder.Services.AddScoped<IDepartmentRepository, DepartmentRepository>();
             builder.Services.AddScoped<ICoursesRepository, CoursesRepository>();
             builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
+
+            builder.Services.AddAutoMapper(map => map.AddProfile(new MappingProfile()));
 
             builder.Services.AddHttpContextAccessor();
 

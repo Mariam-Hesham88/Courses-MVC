@@ -1,6 +1,7 @@
-﻿@model Department
+﻿@model DepartmentViewModel
 @{
     ViewData["Title"] = "Add";
+    var Instructors = new SelectList(ViewBag.Instructors, "Id", "Name");
 }
 
 <h1>Add New Department</h1>
@@ -18,8 +19,11 @@
     </div>
 
     <div>
-        <label asp-for="@Model.instructors">Instructors Id</label>
-        <input asp-for="@Model.instructors" type="text" name="instructorsId" id="instructorsId" class="form form-control" />
+        <label asp-for="@Model.instructorsId">Instructors</label>
+        <select asp-for="@Model.instructorsId" asp-items="Instructors" class="form form-control">
+            <option> -- Select -- </option>
+        </select>
+       @*  <input asp-for="@Model.instructors" type="text" name="instructors" id="instructors" class="form form-control" /> *@
     </div>
 
     <input type="submit" class="btn btn-warning my-3" value="Add" asp-action="Add" asp-controller="Department" />

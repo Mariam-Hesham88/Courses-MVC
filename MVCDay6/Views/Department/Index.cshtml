@@ -1,4 +1,4 @@
-﻿@model IEnumerable<Department>
+﻿@model IEnumerable<DepartmentViewModel>
 @{
     ViewData["Title"] = "Index";
 }
@@ -10,6 +10,12 @@
                 <h1 class="text-info"> Departments </h1>
                 <a href="/Department/Add" class="btn btn-primary">Add New Department</a>
             </div>
+        </div>
+        <div class="row">
+            <form asp-action="Index" asp-controller="Department" class="d-flex my-3" role="search">
+                <input class="form-control me-2" name="SearchValue" type="search" placeholder="Search By Name">
+                <input class="btn btn-primary" value="Search" type="submit">
+            </form>
         </div>
         <div class="row">
             <table class="table">
@@ -28,7 +34,7 @@
                             <td>@item.ManagerName</td>
                             <td>
                                 <div class="btn-group" role="group" aria-label="Basic example">
-                                    <a asp-controller="Department" asp-action="Details" asp-all-route-id="@item.Id" class="btn btn-primary">Details</a>
+@*                                     <a asp-controller="Department" asp-action="Details" asp-all-route-id="@item.Id" class="btn btn-primary">Details</a> *@
                                     <a asp-controller="Department" asp-action="Update" asp-all-route-id="@item.Id" class="btn btn-warning">Update</a>
                                     <a asp-controller="Department" asp-action="Delete" asp-all-route-id="@item.Id" class="btn btn-danger">Delete</a>
                                 </div>

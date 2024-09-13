@@ -1,4 +1,4 @@
-﻿@model IEnumerable<Instructor>
+﻿@model IEnumerable<InstructorViewModel>
 @{
     ViewData["Title"] = "Index";
     ViewBag.Hide = true;
@@ -11,6 +11,12 @@
                 <h1 class="text-info"> Instructors List </h1>
                 <a asp-controller="Instructor" asp-action="Add" class="btn btn-primary my-3">Add New Instructor</a>
             </div>
+        </div>
+        <div class="row">
+            <form asp-action="Index" asp-controller="Instructor" class="d-flex my-3" role="search">
+                <input class="form-control me-2" name="SearchValue" type="search" placeholder="Search By Name">
+                <input class="btn btn-primary" value="Search" type="submit">
+            </form>
         </div>
         <div class="row g-4">
             @foreach (var item in Model)
