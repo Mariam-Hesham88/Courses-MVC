@@ -38,7 +38,10 @@ namespace MVCDay6.Controllers
         [HttpGet]
         public IActionResult Update(int id)
         {
-            var department = _unitOfWork.DepartmentRepository.GetAll();
+            var department = _unitOfWork.DepartmentRepository.GetById(id);
+            if (department == null)
+                return NotFound();
+
             var departmentViewModel = _mapper.Map<DepartmentViewModel>(department);
             ViewBag.Instructors = _unitOfWork.InstructorRepository.GetAll();
             return View(departmentViewModel);
@@ -49,10 +52,16 @@ namespace MVCDay6.Controllers
         {
             if (ModelState.IsValid)
             {
-                var dpartment = _mapper.Map<Department>(departmentViewModel);
-                _unitOfWork.DepartmentRepository.Update(dpartment);
+                var departmentToUpdate = _unitOfWork.DepartmentRepository.GetById(departmentViewModel.Id); // Ensure consistency
+
+                if (departmentToUpdate == null)
+                    return NotFound();
+
+                _mapper.Map(departmentViewModel, departmentToUpdate); // Update existing department
+                _unitOfWork.DepartmentRepository.Update(departmentToUpdate);
                 return RedirectToAction("Index");
             }
+
             ViewBag.Instructors = _unitOfWork.InstructorRepository.GetAll();
             return View(departmentViewModel);
         }
@@ -80,11 +89,10 @@ namespace MVCDay6.Controllers
         public IActionResult Delete(int id)
         {
             var department = _unitOfWork.DepartmentRepository.GetById(id);
-            if (department != null)
-            {
-                _unitOfWork.DepartmentRepository.Delete(department);
-                return RedirectToAction("Index");
-            }
+            if (department == null)
+                return NotFound();
+
+            _unitOfWork.DepartmentRepository.Delete(department);
             return RedirectToAction("Index");
         }
     }

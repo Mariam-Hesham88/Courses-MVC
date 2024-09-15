@@ -30,7 +30,11 @@ namespace MVCDay6.Controllers
         public IActionResult Update(int id)
         {
             var course = _unitOfWork.CoursesRepository.GetById(id);
-            var courseViewModel = _mapper.Map<Course>(course);
+            if (course == null)
+                return NotFound();
+
+            var courseViewModel = _mapper.Map<CourseViewModel>(course);
+            ViewBag.Instructors = _unitOfWork.InstructorRepository.GetAll();
             return View(courseViewModel);
         }
 
@@ -39,7 +43,11 @@ namespace MVCDay6.Controllers
         {
             if (ModelState.IsValid)
             {
-                var course = _mapper.Map<Course>(courseViewModel);
+                var course = _unitOfWork.CoursesRepository.GetById(courseViewModel.Id);
+                if (course == null)
+                    return NotFound();
+
+                _mapper.Map(courseViewModel, course);
                 _unitOfWork.CoursesRepository.Update(course);
                 return RedirectToAction("Index");
             }

@@ -20,8 +20,8 @@
                                <h5 class="card-title">@course.Name</h5>
                                <h6 class="card-subtitle mb-2 text-body-secondary">Full Degree : @course.Degree</h6>
                                <h6 class="card-subtitle mb-2 text-body-secondary">Minmam Degree : @course.MinDegree</h6>
-                                <a asp-controller="Course" asp-action="Update" asp-all-route-id="@course.Id" class="btn btn-primary">Update</a>
-                                <a asp-controller="Course" asp-action="Delete" asp-all-route-id="@course.Id" class="btn btn-danger">Delete</a>
+                               <a asp-controller="Course" asp-action="Update" asp-route-id="@course.Id" class="btn btn-primary">Update</a>
+                               <a asp-controller="Course" asp-action="Delete" asp-route-id="@course.Id" class="btn btn-danger disabled">Delete</a>
                             </div>
                       </div>
                 </div>

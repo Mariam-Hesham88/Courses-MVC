@@ -47,6 +47,9 @@ namespace MVCDay6.Controllers
         public IActionResult Update(int id)
         {
             var instructor = _unitOfWork.InstructorRepository.GetById(id);
+            if (instructor == null)
+                return NotFound();
+
             var instructorViewModel = _mapping.Map<InstructorViewModel>(instructor);
             return View(instructorViewModel);
         }
@@ -56,7 +59,11 @@ namespace MVCDay6.Controllers
         {
             if (ModelState.IsValid)
             {
-                var instructor = _mapping.Map<Instructor>(instructorViewModel);
+                var instructor = _unitOfWork.InstructorRepository.GetById(instructorViewModel.Id);
+                if (instructor == null)
+                    return NotFound();
+
+                _mapping.Map(instructorViewModel, instructor);
                 _unitOfWork.InstructorRepository.Update(instructor);
                 return RedirectToAction("Index");
             }
@@ -83,12 +90,11 @@ namespace MVCDay6.Controllers
 
         public IActionResult Delete(int id)
         {
-            var instructor = _unitOfWork.InstructorRepository.GetById(id);
+            var istructor = _unitOfWork.InstructorRepository.GetById(id);
+            if (istructor == null)
+                return NotFound(); 
 
-            if (instructor is null)
-                return NotFound();
-
-            _unitOfWork.InstructorRepository.Delete(instructor);
+            _unitOfWork.InstructorRepository.Delete(istructor);
             return RedirectToAction("Index");
         }
 
