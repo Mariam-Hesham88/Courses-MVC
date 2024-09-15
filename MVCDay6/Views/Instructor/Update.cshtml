@@ -3,6 +3,8 @@
     ViewData["Title"] = "Update";
 }
 
+<h1>Update The Instructor</h1>
+<div asp-validation-summary="All"></div>
 
 <form asp-action="Add" asp-controller="Instructor">
     <div class=" pt-2">
@@ -25,5 +27,6 @@
         <input asp-for="@Model.Salary" type="number" name="Salary" value="@Model.Salary" id="Salary" class="form form-control" />
     </div>
 
-    <input type="submit" class="btn btn-warning mt-4" value="Update" asp-action="Update" asp-controller="Instructor" />
+    <input type="submit" class="btn btn-primary mt-4" value="Update" asp-action="Update" asp-controller="Instructor" />
+    <a asp-action="Index" asp-controller="Instructor" class="btn btn-warning mt-4">Back To List</a>
 </form>

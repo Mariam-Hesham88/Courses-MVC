@@ -1,10 +1,12 @@
 ﻿using AutoMapper;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+//using MVCDay6.Helper;
 using MVCDay6.Models;
 using MVCDay6.Models.Entities;
 using MVCDay6.Repo.Interfaces;
 using MVCDay6.Repo.Repositories;
+using System.Reflection.Metadata;
 
 namespace MVCDay6.Controllers
 {
@@ -37,10 +39,14 @@ namespace MVCDay6.Controllers
             return View(instructorsViewModel);
         }
 
-        public IActionResult Details(int id)
+        public IActionResult Details(InstructorViewModel instructorViewModel)
         {
-            var inst = _unitOfWork.InstructorRepository.GetById(id);
-            return View(inst);
+            var instructor = _unitOfWork.InstructorRepository.GetById(instructorViewModel.Id);
+            if(instructor == null)
+                return NotFound();
+
+            var instructorsViewModel = _mapping.Map<InstructorViewModel>(instructor);
+            return View(instructorsViewModel);
         }
 
         [HttpGet]
@@ -82,6 +88,9 @@ namespace MVCDay6.Controllers
             if (ModelState.IsValid)
             {
                 var instructor = _mapping.Map<Instructor>(instructorViewModel);
+
+                //instructor.ImgSrc = DocumentSettings.UploadFile(instructorViewModel.Image, "imgs");
+
                 _unitOfWork.InstructorRepository.Add(instructor);
                 return RedirectToAction("Index");
             }

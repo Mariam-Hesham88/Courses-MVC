@@ -26,6 +26,7 @@
        @*  <input asp-for="@Model.instructors" type="text" name="instructors" id="instructors" class="form form-control" /> *@
     </div>
 
-    <input type="submit" class="btn btn-warning my-3" value="Add" asp-action="Add" asp-controller="Department" />
+    <input type="submit" class="btn btn-primary my-3" value="Add" asp-action="Add" asp-controller="Department" />
+    <a asp-action="Index" asp-controller="Department" class="btn btn-warning mt-3">Back To List</a>
 
 </form>

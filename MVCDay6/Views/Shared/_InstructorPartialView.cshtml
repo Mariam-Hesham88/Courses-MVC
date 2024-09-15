@@ -6,15 +6,15 @@
 @if (Hide == false)
 {
     <div class="card" style="width: 18rem;">
-        <img src="~/imgs/@Model.ImgSrc" alt="Instructor" />
+        <img src="~/Files/imgs/@Model.ImgSrc" alt="Instructor" />
         <div class="card-body">
             <h5 class="card-title">Name: @Model.Name</h5>
             <h5 class="card-title">Salary: @Model.Salary</h5>
             <h5 class="card-title">Address: @Model.Address</h5>
             <div class="btn-group" role="group" aria-label="Basic example">
                 <a asp-controller="Instructor" asp-action="Index" asp-route-id="@Model.Id" class="btn btn-primary">Back</a>
-                <a asp-controller="Instructor" asp-action="Update" asp-route-id="@Model.Id" class="btn btn-Warning">Update</a>
-                <a asp-controller="Instructor" asp-action="Delete" asp-route-id="@Model.Id" class="btn btn-Danger">Delete</a>
+                <a asp-controller="Instructor" asp-action="Update" asp-route-id="@Model.Id" class="btn btn-warning">Update</a>
+                <a asp-controller="Instructor" asp-action="Delete" asp-route-id="@Model.Id" class="btn btn-danger">Delete</a>
             </div>
         </div>
     </div>

@@ -5,40 +5,48 @@
       "PackagePath": "staticwebassets\\MVCDay6.bundle.scp.css"
     },
     {
+      "Id": "C:\\Users\\Mariam\\Desktop\\Assignments\\Task4\\MVCDay6\\MVCDay6\\wwwroot\\Files\\imgs\\System.Func`1[System.Guid]-person-1.jpg",
+      "PackagePath": "staticwebassets\\Files\\imgs\\System.Func`1[System.Guid]-person-1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Mariam\\Desktop\\Assignments\\Task4\\MVCDay6\\MVCDay6\\wwwroot\\Files\\imgs\\System.Func`1[System.Guid]-person-2.jpg",
+      "PackagePath": "staticwebassets\\Files\\imgs\\System.Func`1[System.Guid]-person-2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Mariam\\Desktop\\Assignments\\Task4\\MVCDay6\\MVCDay6\\wwwroot\\Files\\imgs\\home.png",
+      "PackagePath": "staticwebassets\\Files\\imgs\\home.png"
+    },
+    {
+      "Id": "C:\\Users\\Mariam\\Desktop\\Assignments\\Task4\\MVCDay6\\MVCDay6\\wwwroot\\Files\\imgs\\p1.jpg",
+      "PackagePath": "staticwebassets\\Files\\imgs\\p1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Mariam\\Desktop\\Assignments\\Task4\\MVCDay6\\MVCDay6\\wwwroot\\Files\\imgs\\p2.jpg",
+      "PackagePath": "staticwebassets\\Files\\imgs\\p2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Mariam\\Desktop\\Assignments\\Task4\\MVCDay6\\MVCDay6\\wwwroot\\Files\\imgs\\p3.jpg",
+      "PackagePath": "staticwebassets\\Files\\imgs\\p3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Mariam\\Desktop\\Assignments\\Task4\\MVCDay6\\MVCDay6\\wwwroot\\Files\\imgs\\p4.jpg",
+      "PackagePath": "staticwebassets\\Files\\imgs\\p4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Mariam\\Desktop\\Assignments\\Task4\\MVCDay6\\MVCDay6\\wwwroot\\Files\\imgs\\p5.jpg",
+      "PackagePath": "staticwebassets\\Files\\imgs\\p5.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Mariam\\Desktop\\Assignments\\Task4\\MVCDay6\\MVCDay6\\wwwroot\\Files\\imgs\\p6.jpg",
+      "PackagePath": "staticwebassets\\Files\\imgs\\p6.jpg"
+    },
+    {
       "Id": "C:\\Users\\Mariam\\Desktop\\Assignments\\Task4\\MVCDay6\\MVCDay6\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },
     {
       "Id": "C:\\Users\\Mariam\\Desktop\\Assignments\\Task4\\MVCDay6\\MVCDay6\\wwwroot\\favicon.ico",
       "PackagePath": "staticwebassets\\favicon.ico"
-    },
-    {
-      "Id": "C:\\Users\\Mariam\\Desktop\\Assignments\\Task4\\MVCDay6\\MVCDay6\\wwwroot\\imgs\\home.png",
-      "PackagePath": "staticwebassets\\imgs\\home.png"
-    },
-    {
-      "Id": "C:\\Users\\Mariam\\Desktop\\Assignments\\Task4\\MVCDay6\\MVCDay6\\wwwroot\\imgs\\p1.jpg",
-      "PackagePath": "staticwebassets\\imgs\\p1.jpg"
-    },
-    {
-      "Id": "C:\\Users\\Mariam\\Desktop\\Assignments\\Task4\\MVCDay6\\MVCDay6\\wwwroot\\imgs\\p2.jpg",
-      "PackagePath": "staticwebassets\\imgs\\p2.jpg"
-    },
-    {
-      "Id": "C:\\Users\\Mariam\\Desktop\\Assignments\\Task4\\MVCDay6\\MVCDay6\\wwwroot\\imgs\\p3.jpg",
-      "PackagePath": "staticwebassets\\imgs\\p3.jpg"
-    },
-    {
-      "Id": "C:\\Users\\Mariam\\Desktop\\Assignments\\Task4\\MVCDay6\\MVCDay6\\wwwroot\\imgs\\p4.jpg",
-      "PackagePath": "staticwebassets\\imgs\\p4.jpg"
-    },
-    {
-      "Id": "C:\\Users\\Mariam\\Desktop\\Assignments\\Task4\\MVCDay6\\MVCDay6\\wwwroot\\imgs\\p5.jpg",
-      "PackagePath": "staticwebassets\\imgs\\p5.jpg"
-    },
-    {
-      "Id": "C:\\Users\\Mariam\\Desktop\\Assignments\\Task4\\MVCDay6\\MVCDay6\\wwwroot\\imgs\\p6.jpg",
-      "PackagePath": "staticwebassets\\imgs\\p6.jpg"
     },
     {
       "Id": "C:\\Users\\Mariam\\Desktop\\Assignments\\Task4\\MVCDay6\\MVCDay6\\wwwroot\\js\\site.js",

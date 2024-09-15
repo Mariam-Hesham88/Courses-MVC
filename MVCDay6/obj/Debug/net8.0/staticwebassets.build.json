@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "6lFOEJoga0LzN6+8aGLVjQuStaBJdfpKXcmx8zJnEFw=",
+  "Hash": "dRFAxdSzGQs275I7SWfYjVhDoiHn6Ig196YVr/WxcGs=",
   "Source": "MVCDay6",
   "BasePath": "_content/MVCDay6",
   "Mode": "Default",
@@ -93,12 +93,12 @@
       "OriginalItemSpec": "wwwroot\\favicon.ico"
     },
     {
-      "Identity": "C:\\Users\\Mariam\\Desktop\\Assignments\\Task4\\MVCDay6\\MVCDay6\\wwwroot\\imgs\\home.png",
+      "Identity": "C:\\Users\\Mariam\\Desktop\\Assignments\\Task4\\MVCDay6\\MVCDay6\\wwwroot\\Files\\imgs\\home.png",
       "SourceId": "MVCDay6",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\Mariam\\Desktop\\Assignments\\Task4\\MVCDay6\\MVCDay6\\wwwroot\\",
       "BasePath": "_content/MVCDay6",
-      "RelativePath": "imgs/home.png",
+      "RelativePath": "Files/imgs/home.png",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -109,15 +109,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\imgs\\home.png"
+      "OriginalItemSpec": "wwwroot\\Files\\imgs\\home.png"
     },
     {
-      "Identity": "C:\\Users\\Mariam\\Desktop\\Assignments\\Task4\\MVCDay6\\MVCDay6\\wwwroot\\imgs\\p1.jpg",
+      "Identity": "C:\\Users\\Mariam\\Desktop\\Assignments\\Task4\\MVCDay6\\MVCDay6\\wwwroot\\Files\\imgs\\p1.jpg",
       "SourceId": "MVCDay6",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\Mariam\\Desktop\\Assignments\\Task4\\MVCDay6\\MVCDay6\\wwwroot\\",
       "BasePath": "_content/MVCDay6",
-      "RelativePath": "imgs/p1.jpg",
+      "RelativePath": "Files/imgs/p1.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -128,15 +128,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\imgs\\p1.jpg"
+      "OriginalItemSpec": "wwwroot\\Files\\imgs\\p1.jpg"
     },
     {
-      "Identity": "C:\\Users\\Mariam\\Desktop\\Assignments\\Task4\\MVCDay6\\MVCDay6\\wwwroot\\imgs\\p2.jpg",
+      "Identity": "C:\\Users\\Mariam\\Desktop\\Assignments\\Task4\\MVCDay6\\MVCDay6\\wwwroot\\Files\\imgs\\p2.jpg",
       "SourceId": "MVCDay6",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\Mariam\\Desktop\\Assignments\\Task4\\MVCDay6\\MVCDay6\\wwwroot\\",
       "BasePath": "_content/MVCDay6",
-      "RelativePath": "imgs/p2.jpg",
+      "RelativePath": "Files/imgs/p2.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -147,15 +147,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\imgs\\p2.jpg"
+      "OriginalItemSpec": "wwwroot\\Files\\imgs\\p2.jpg"
     },
     {
-      "Identity": "C:\\Users\\Mariam\\Desktop\\Assignments\\Task4\\MVCDay6\\MVCDay6\\wwwroot\\imgs\\p3.jpg",
+      "Identity": "C:\\Users\\Mariam\\Desktop\\Assignments\\Task4\\MVCDay6\\MVCDay6\\wwwroot\\Files\\imgs\\p3.jpg",
       "SourceId": "MVCDay6",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\Mariam\\Desktop\\Assignments\\Task4\\MVCDay6\\MVCDay6\\wwwroot\\",
       "BasePath": "_content/MVCDay6",
-      "RelativePath": "imgs/p3.jpg",
+      "RelativePath": "Files/imgs/p3.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -166,15 +166,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\imgs\\p3.jpg"
+      "OriginalItemSpec": "wwwroot\\Files\\imgs\\p3.jpg"
     },
     {
-      "Identity": "C:\\Users\\Mariam\\Desktop\\Assignments\\Task4\\MVCDay6\\MVCDay6\\wwwroot\\imgs\\p4.jpg",
+      "Identity": "C:\\Users\\Mariam\\Desktop\\Assignments\\Task4\\MVCDay6\\MVCDay6\\wwwroot\\Files\\imgs\\p4.jpg",
       "SourceId": "MVCDay6",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\Mariam\\Desktop\\Assignments\\Task4\\MVCDay6\\MVCDay6\\wwwroot\\",
       "BasePath": "_content/MVCDay6",
-      "RelativePath": "imgs/p4.jpg",
+      "RelativePath": "Files/imgs/p4.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -185,15 +185,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\imgs\\p4.jpg"
+      "OriginalItemSpec": "wwwroot\\Files\\imgs\\p4.jpg"
     },
     {
-      "Identity": "C:\\Users\\Mariam\\Desktop\\Assignments\\Task4\\MVCDay6\\MVCDay6\\wwwroot\\imgs\\p5.jpg",
+      "Identity": "C:\\Users\\Mariam\\Desktop\\Assignments\\Task4\\MVCDay6\\MVCDay6\\wwwroot\\Files\\imgs\\p5.jpg",
       "SourceId": "MVCDay6",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\Mariam\\Desktop\\Assignments\\Task4\\MVCDay6\\MVCDay6\\wwwroot\\",
       "BasePath": "_content/MVCDay6",
-      "RelativePath": "imgs/p5.jpg",
+      "RelativePath": "Files/imgs/p5.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -204,15 +204,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\imgs\\p5.jpg"
+      "OriginalItemSpec": "wwwroot\\Files\\imgs\\p5.jpg"
     },
     {
-      "Identity": "C:\\Users\\Mariam\\Desktop\\Assignments\\Task4\\MVCDay6\\MVCDay6\\wwwroot\\imgs\\p6.jpg",
+      "Identity": "C:\\Users\\Mariam\\Desktop\\Assignments\\Task4\\MVCDay6\\MVCDay6\\wwwroot\\Files\\imgs\\p6.jpg",
       "SourceId": "MVCDay6",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\Mariam\\Desktop\\Assignments\\Task4\\MVCDay6\\MVCDay6\\wwwroot\\",
       "BasePath": "_content/MVCDay6",
-      "RelativePath": "imgs/p6.jpg",
+      "RelativePath": "Files/imgs/p6.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -223,7 +223,45 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\imgs\\p6.jpg"
+      "OriginalItemSpec": "wwwroot\\Files\\imgs\\p6.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\Mariam\\Desktop\\Assignments\\Task4\\MVCDay6\\MVCDay6\\wwwroot\\Files\\imgs\\System.Func`1[System.Guid]-person-1.jpg",
+      "SourceId": "MVCDay6",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Mariam\\Desktop\\Assignments\\Task4\\MVCDay6\\MVCDay6\\wwwroot\\",
+      "BasePath": "_content/MVCDay6",
+      "RelativePath": "Files/imgs/System.Func`1[System.Guid]-person-1.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Files\\imgs\\System.Func`1[System.Guid]-person-1.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\Mariam\\Desktop\\Assignments\\Task4\\MVCDay6\\MVCDay6\\wwwroot\\Files\\imgs\\System.Func`1[System.Guid]-person-2.jpg",
+      "SourceId": "MVCDay6",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Mariam\\Desktop\\Assignments\\Task4\\MVCDay6\\MVCDay6\\wwwroot\\",
+      "BasePath": "_content/MVCDay6",
+      "RelativePath": "Files/imgs/System.Func`1[System.Guid]-person-2.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Files\\imgs\\System.Func`1[System.Guid]-person-2.jpg"
     },
     {
       "Identity": "C:\\Users\\Mariam\\Desktop\\Assignments\\Task4\\MVCDay6\\MVCDay6\\wwwroot\\js\\site.js",

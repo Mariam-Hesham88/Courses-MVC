@@ -12,7 +12,7 @@ namespace MVCDay6.Models
         [Required(ErrorMessage = "Please enter name"), MinLength(3)]
         public string Name { get; set; }
 
-        //[RegularExpression(@"[a-z]+\.(jpg)", ErrorMessage = ("you must upload image with jpg "))]
+        public IFormFile Image { get; set; }
         public string? ImgSrc { get; set; }
 
         // -------> [Range(8000, 50000, ErrorMessage = "Please enter correct value")]
